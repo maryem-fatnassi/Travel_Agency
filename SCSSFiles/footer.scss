@@ -1,0 +1,73 @@
+@use "global" ;
+
+.footer {
+  background: black;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 23px;
+  color: #1BA6F2;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #d5d5d5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: global.$orange-color;
+  border-bottom: 1px solid global.$orange-color;
+}
+
+.footer-section p {
+    margin-top: 10px;
+}
+.social-icons i {
+  font-size: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: global.$orange-color;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: global.$border-radius;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2c3a47;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  color: #ccc;
+}

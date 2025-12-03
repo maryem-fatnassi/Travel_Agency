@@ -1,0 +1,61 @@
+@use "global" ;
+
+// Navbar Section .. 
+header {
+    position: sticky ;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    @include global.flex-center ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.1rem 3.1rem;
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+.logo {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: global.$font-weight ;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.logo span {
+    color: global.$orange-color;
+}
+.nav-links {
+    list-style: none;
+    display: global.$flex ;
+    gap: 3rem;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: global.$font-weight;
+    padding-bottom: 3px;
+    font-size: 1.1rem;
+}
+.nav-links li a:hover {
+    color: global.$orange-color;
+    border-bottom: 2px solid global.$orange-color;
+}
+/* Responsive Navbar */
+@media (max-width: 880px) {
+    .navbar {
+      @include global.flex-center ;
+      padding: 1.1rem 1rem;
+    }
+    header {
+       min-width: 100vh;
+    }
+    #travel-logo {
+        display: none;
+    }
+    .nav-links.active {
+      display: flex;
+    }
+}   

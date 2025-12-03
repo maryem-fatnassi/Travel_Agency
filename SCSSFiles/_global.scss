@@ -1,0 +1,44 @@
+// Variables 
+$orange-color : #FF7F50 ;
+$navy-color : #013A82 ;
+$font-weight : bold ;
+$font-weight2 : 900 ;
+$box-shadow : 2px 2px 8px black ;
+$border-radius : 8px ;
+$text-align : center ;
+$border-none : none ;
+$flex : flex ;
+
+// Mixin
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin card-size {
+    max-width: 22rem;
+}
+@mixin cards-container-style {
+    flex-wrap: wrap;
+    min-width: 100%;
+    gap: 30px;
+}
+
+// Global Styles 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+}
+html body {
+    min-width: 100vh;
+}
+.title span {
+    color: $orange-color;
+}

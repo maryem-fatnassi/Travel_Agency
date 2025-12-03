@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: cursive;
+  font-weight: 900;
+  position: relative;
+}
+
+html body {
+  min-width: 100vh;
+}
+
+.title span {
+  color: #FF7F50;
+}
+
+/* Reset */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #FF7F50;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.gallery-container {
+  columns: 3 300px;
+  column-gap: 20px;
+  padding: 40px 5%;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  break-inside: avoid;
+  box-shadow: 0 4px 8px gray;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+  border-radius: 15px;
+}
+
+/* Hover */
+.item:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.7) saturate(1.2);
+}
+
+.tall img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.wide img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  #header {
+    padding: 0 10px;
+  }
+  #travel-logo {
+    display: block;
+  }
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .gallery-container {
+    columns: 2 200px;
+  }
+}
+@media (max-width: 480px) {
+  .gallery-container {
+    columns: 1 200px;
+  }
+}
+
+/*# sourceMappingURL=gallery.css.map */
